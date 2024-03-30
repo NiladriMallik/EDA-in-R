@@ -143,7 +143,7 @@ ggplot(data = aggregated_df, aes(x = month.name, y = Zone1_PC/1000000)) +
 labs(x = 'Months', y = 'Power consumption (in million)', title = 'Zone 1 Power Consumption') +
   geom_line(aes(y = AvgWindSpeed, group = 1, color = 'AvgWindSpeed'),size = 1.2) +
   geom_line(aes(y = AvgTemperature, group = 1, color = 'Average Temp'), size = 1.2) +
-  geom_line(aes(y = AvgHumidity, group = 1, color = 'Average Humidity'), size = 1.2)+
+  geom_line(aes(y = AvgHumidity, group = 1, color = 'Average Humidity'), size = 1.2) +
   theme(plot.title = element_text(hjust = 0.5))
 
 
@@ -153,8 +153,7 @@ ggplot(data = aggregated_df, aes(x = month.name, y = Zone2_PC/1000000)) +
   labs(x = 'Months', y = 'Power consumption (in million)', title = 'Zone 2 Power Consumption') +
   geom_line(aes(y = AvgWindSpeed, group = 1, color = 'AvgWindSpeed'),size = 1.2) +
   geom_line(aes(y = AvgTemperature, group = 1, color = 'Average Temp'), size = 1.2) +
-  geom_line(aes(y = AvgHumidity, group = 1, color = 'Average Humidity'), size = 1.2)
-
+  geom_line(aes(y = AvgHumidity, group = 1, color = 'Average Humidity'), size = 1.2) +
   theme(plot.title = element_text(hjust = 0.5))
 
 #display line chart of wind speed over zone 3 power consumption
